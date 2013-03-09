@@ -49,7 +49,7 @@ $.fn.sortable = function(options) {
             if (options.start) {
                 options.start(e, {item: dragging, placeholder: placeholder});
             }
-		}).on('dragend.h5s', function() {
+		}).on('dragend.h5s', function(e) {
 			if (!dragging) {
 				return;
 			}
